@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_06_17_124729) do
+ActiveRecord::Schema.define(version: 2024_06_17_141834) do
 
   create_table "articles", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2024_06_17_124729) do
     t.string "full_name"
     t.string "email"
     t.string "password"
+    t.string "name"
   end
 
   add_foreign_key "articles", "users"
