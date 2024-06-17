@@ -5,7 +5,7 @@ class CreateArticles < ActiveRecord::Migration[6.0]
       t.string :title
       t.text :description
 
-      t.timestamps # created_at, updated_at berupa datetime
+      t.timestamps
     end
   end
 end
