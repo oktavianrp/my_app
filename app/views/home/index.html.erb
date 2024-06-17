@@ -4,8 +4,7 @@
 <ul>
     <%- for article in @articles do %>
     <li>
-        <strong><%= article.title %></strong>
-        <p><%= article.description %></p>
+        <strong><%= link_to  article.title, read_path(article_id: article.id) %></strong>
         <small>
             Oleh <%= article.user.full_name %>
             pada <%= article.created_at.to_s (:short) %>
